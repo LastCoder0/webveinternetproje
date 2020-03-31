@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+    min-height: 800px;
+}
+.sayfa {
+    width: 1280px;
+    height: 800px;
+    padding: 20px;
+    background-color:darkgray;
+    position: relative;
+    margin: auto;
+}
+.ustResim 
+{
+    background-repeat: no-repeat;
+
+    background-image: url("images/banner.jpg");
+    width: 1275px;
+ height: 150px;
+ 
+}
+.solMenu{
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color:white;
+    width:193px;
+    height:500px;
+    float:left;
+}
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size:20px;
+}
+ul.menu a {
+    display: block;
+    color: #1B1B1B;
+    background-color: #E2E2E2;
+    width:8em;
+    padding: .2em .8em;
+    text-decoration: none;
+}
+ul.menu a:hover
+{
+	background-color:lightblue;
+}
+.icerik {
+    margin-left: 10px;
+    margin-top:10px ;
+    width:720px;
+    height:500px;
+    float: left;
+
+    background-color:white;
+
+}
+.mail {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-right: 10px;
+
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    float:right;
+
+}
+.altalan 
+{
+    width: 1280px;
+    height: 30px;
+    padding: 20px;
+    background-color:burlywood;
+    position: relative;
+    margin: auto;
+}
+
+
+
