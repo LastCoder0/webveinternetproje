@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -6,8 +7,8 @@ body {
     min-height: 800px;
 }
 .sayfa {
-    width: 1280px;
-    height: 800px;
+    width: 1650px;
+    height: 1000px;
     padding: 20px;
     background-color:darkgray;
     position: relative;
@@ -15,10 +16,13 @@ body {
 }
 .ustResim 
 {
+    margin-left: 2px;
+    margin-right: 25px;
+
     background-repeat: no-repeat;
 
     background-image: url("images/banner.jpg");
-    width: 1275px;
+    width: 1290px;
  height: 150px;
  
 }
@@ -49,19 +53,24 @@ ul.menu a:hover
 	background-color:lightblue;
 }
 .icerik {
-    margin-left: 10px;
-    margin-top:10px ;
-    width:720px;
-    height:500px;
+    margin-left: 5px;
+    margin-top:5px ;
+    width:1070px;
+    height:900px;
     float: left;
 
     background-color:white;
 
 }
+.renk
+ {
+     color:burlywood;
+     text-align: center;
+     
+ }
 .mail {
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-right: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
 
     width: 300px;
     height: 300px;
@@ -69,11 +78,25 @@ ul.menu a:hover
     float:right;
 
 }
+
+.genelbilgi
+{
+    font-family: cursive;
+
+    text-align: center;
+    font-size: 13px;
+    margin-left: 50px;
+    padding:5px;
+    width: 900px;
+    height: 500px;
+}
+
 .altalan 
 {
-    width: 1280px;
-    height: 30px;
-    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width: 1650px;
+    height: 50px;
     background-color:burlywood;
     position: relative;
     margin: auto;
