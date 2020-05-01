@@ -4,7 +4,8 @@
     <title>Ordu-Karadeniz Yöresi</title>
     <link href="proje.css" rel="stylesheet" />
     <link href="slider.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
     <meta charset="utf-8" />
   </head>
   <body>
@@ -69,15 +70,15 @@
 
       </div>
       <div class="mail">
-        <form style="text-align: left;">
-          <h3 style="text-align:center">Siteye Giriş Yapın</h3>
-          <label>E-mail</label>
-          <input type="text" />
+        <form style="text-align:left;" class="form-group" action="" method="POST">
+          <h3 style="text-align:center">Giriş Yapın</h3>
+          <span class="label label-default"  style="margin-left:25px;"> <b>E-mail:</b></span>
+          <input type="text" name="email" style="width:250px;margin-left:15px;" class="form-control" placeholder="E-mail giriniz"required/>
           <br />
-          <label>Şifre</label>
-          <input type="text" />
+          <span class="label label-default" style="margin-left:25px;"><b>Şifre:</b></span>
+          <input type="text" name="sifre" class="form-control" style="width:250px;margin-left:15px;" placeholder="Sifre giriniz" required/>
           <br />
-          <input type="submit" />
+          <input type="submit" value="Giriş Yap" style="margin-left:45px;" class="btn btn-info" />
         </form>
       </div>
     </div>
