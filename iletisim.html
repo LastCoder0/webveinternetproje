@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordu-Karadeniz Yöresi</title>
+    <link href="proje.css" rel="stylesheet" />
+
+    <link href="slider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script src="slider.js"></script>
+
+    <div class="sayfa">
+      <div class="ustResim"></div>
+      <div class="solMenu">
+        <ul class="menu">
+            <li><a href="index.php">Anasayfa</a></li>
+            <li><a href="mycv.html">Benim CV</a></li>
+            <li><a href="hakkımda.html">Hakkımda</a></li>
+            <li><a href="sehirim.html">Sehirim</a></li>
+            <li><a href="mirasim.html">Mirasim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Bize Ulaşın</h2>
+          <p>Detaylı Bilgiler İçin Bizden Bilgi Alabilirsiniz.....</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/iletisimpage.jpg" style="width:100%">
+          </div>
+          <div class="column">
+              
+            <form action="iletisimok.php" method="POST" onsubmit="return kontrolemail();">
+              <label >Adınız</label>
+              <input type="text" id="ad"   name="ad" placeholder="Lütfen Adınızı Giriniz...." required>
+              <label >Soy Adınız</label>
+              <input type="text" id="soyad" name="soyad" placeholder="Lütfen Soyadınızı Giriniz...." required>
+              <label >Mail Adresiniz</label>
+              <input type="email" class="form-control" id="email"  name="email" placeholder="Mail Adresinizi Giriniz..." required>
+              <label >Cinsiyet</label>
+              <br>
+              <input type="radio"   name="cinsiyet" value="Bay" required>
+              <label for="male">Erkek</label><br>
+              <input type="radio" Checked="true"  name="cinsiyet" value="Bayan">
+              <label for="kız">Kız</label><br>
+              <label for="Mesaj">Mesaj İletmek İstediğiniz Departman</label>
+            <select name="departman">
+                <option value="Yönetim">
+                    Yazılım
+                </option>
+                <option value="Kargo">
+                    Kargo
+                </option>
+                <option value="Satış">
+                    Satış
+                </option>
+                <option value="Yazılım">
+                    Yazılım
+                </option>
+                
+            </select>
+            <input type="checkbox" id="acil"  name="acil" value="Acil Bir Mesajım Var">
+            <label for="acil"> Acil Bir Mesajım Var</label><br>
+            <input type="checkbox" id="acildegil" checked name="acil" value="Acil Degil">
+            <label for="acildegil"> Acil degil</label>
+     <br>
+              <label >Mesajınız</label>
+              <textarea id="subject"  value=""  name="mesaj" placeholder="Lütfen Mesaj Giriniz...." required style="height:170px"></textarea>
+              <input type="submit"  onclick="eposta_kontrol(str)" name="gonder" class="send" value="Gönder">        
+                    <input type="reset"  class="clear" value="Temizle">
+              
+            </form>
+            <script>
+function  kontrolemail()
+{
+  var x=document.forms["form"]["email"].value;
+  var atpos=x.indexOf("@"); // @ in kacinci indexde oldugunu bul
+  var dotpos=x.lastIndexOf("."); //noktanın sondan kacıncı indexte oldugunu buluyor
+  if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+    {
+      alert("Geçirsiz E-mail Adresi");
+    }
+    else
+     {
+       alert("E-mail Adresi Geçerli");
+     }
+     return false;
+}
+
+            </script>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

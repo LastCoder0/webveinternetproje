@@ -8,19 +8,20 @@ body {
 }
 .sayfa {
     width: 1650px;
-    height: 1000px;
+    height: 2500px;
     padding: 20px;
-    background-color:darkgray;
     position: relative;
     margin: auto;
 }
+ul {
+list-style-type: none;
+padding-left: 0; }
 .ustResim 
 {
     margin-left: 2px;
     margin-right: 25px;
 
     background-repeat: no-repeat;
-
     background-image: url("images/banner.jpg");
     width: 1290px;
  height: 150px;
@@ -29,7 +30,6 @@ body {
 .solMenu{
     margin-top: 10px;
     margin-right: 10px;
-    background-color:white;
     width:193px;
     height:500px;
     float:left;
@@ -71,9 +71,9 @@ ul.menu a:hover
 .mail {
     margin-top: 5px;
     margin-right: 5px;
-
-    width: 350px;
-    height: 350px;
+   background-color:rgb(235, 228, 173);
+    width: 320px;
+    height: 400px;
     background-color: white;
     float:right;
 
@@ -99,8 +99,63 @@ ul.menu a:hover
     height: 50px;
     background-color:burlywood;
     position: relative;
-    margin: auto;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+ 
+  .send
+{
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+.clear
+{
+  background-color:red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
 
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
 
